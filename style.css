@@ -56,9 +56,9 @@ img.profile-picture.medium {
 /* Header */
 .header {
     display: grid;
-    padding-top: 16px;
+    padding-top: 32px;
     padding-left: 32px;
-    padding-bottom: 16px;
+    padding-bottom: 32px;
     padding-right: 32px;
     align-items: center;
     gap: 16px;
@@ -67,10 +67,31 @@ img.profile-picture.medium {
     grid-template-rows: 5vh 10vh;
 }
 
+.search-bar {
+    display: grid;
+    grid-column: 1 /2;
+    grid-row: 1 /2;
+    justify-content: center;
+}
+
 .search-bar > form {
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr 6fr 1fr;
+}
+
+.search-bar > form > button {
+    background-image: url(res/svgs/magnify.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: none;
+    background-color: inherit;
+    width: 50px;
+}
+
+.search-bar > form > button:hover {
+    cursor: pointer;
+    filter: invert(50%);
 }
 
 .search-bar > form > input[type="text"] {
@@ -86,12 +107,18 @@ img.profile-picture.medium {
 
 .search-bar > form > input[type="text"]:focus {
     border: var(--slate-500) 1px solid;
-    box-shadow: none;
+    outline: var(--slate-400) 1px outset;
 }
 
 .user-info {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
+}
+
+.user-info > .notifications, .user-info > .username {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .greeting {
