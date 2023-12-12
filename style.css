@@ -1,3 +1,87 @@
 body {
     background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: grid;
+    gap: 16px;
+    grid-column: 2 / 3;
+    grid-template-columns: 3fr 1fr;
+}
+
+.search-bar > form {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.greeting-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.actions {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/* Sidebar */
+.sidebar {
+    display: grid;
+    grid-row: 1 / 3;
+    grid-template-rows: 1fr 6fr 1fr 3fr 5fr;
+}
+
+.navigation {
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.configurations {
+    display: grid;
+    align-items: center;
+    grid-row-start: 4;
+}
+
+/* Main */
+.main {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template-columns: 4fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.announcements {
+    display: grid;
+}
+
+.trending {
+    display: grid;
+    grid-column-start: 2;
 }
