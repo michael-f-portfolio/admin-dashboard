@@ -41,7 +41,17 @@ h1, h2, h3, a {
     padding: 0;
 }
 
+img.profile-picture {
+    border-radius: 50%;
+}
 
+img.profile-picture.small {
+    width: 75px;
+}
+
+img.profile-picture.medium {
+    width: 100px;
+}
 
 /* Header */
 .header {
