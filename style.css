@@ -71,27 +71,25 @@ img.profile-picture.medium {
     display: grid;
     grid-column: 1 /2;
     grid-row: 1 /2;
-    justify-content: center;
+    justify-content: start;
 }
 
-.search-bar > form {
+.search-bar form {
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr 6fr 1fr;
 }
 
-.search-bar > form > button {
-    background-image: url(res/svgs/magnify.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    border: none;
-    background-color: inherit;
-    width: 50px;
+.search-bar label {
+    justify-self: end;
 }
 
-.search-bar > form > button:hover {
-    cursor: pointer;
-    filter: invert(50%);
+.search-bar form input[type="submit"] {
+    display: none;
+}
+
+.search-bar svg {
+    height: 30px;
 }
 
 .search-bar > form > input[type="text"] {
@@ -99,10 +97,8 @@ img.profile-picture.medium {
     height: 2rem;
     border: none;
     border-radius: 50px;
-    margin-left: 10px;
     background-color: var(--slate-300);
     text-indent: 2rem;
-
 }
 
 .search-bar > form > input[type="text"]:focus {
@@ -262,6 +258,7 @@ div.actions > button:hover {
     padding-right: 32px;
     min-height: 150px;
     min-width: 250px;
+    max-width: 450px;
     border-radius: 10px;
 }
 
