@@ -88,7 +88,9 @@ img.profile-picture.medium {
 }
 
 .search-bar svg {
-    height: 40px;
+    height: 32px;
+    fill: var(--slate-600);
+    padding-top: 4px;
 }
 
 .search-bar > form > input[type="text"] {
@@ -96,15 +98,23 @@ img.profile-picture.medium {
     height: 2rem;
     border: none;
     border-radius: 50px;
-    background-color: var(--slate-300);
+    background-color: var(--slate-400);
     text-indent: 2rem;
     align-self: center;
     min-width: 410px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--slate-800);
 }
 
 .search-bar > form > input[type="text"]:focus {
-    border: var(--slate-500) 1px solid;
-    outline: var(--slate-400) 1px outset;
+    border: none;
+    outline: none;
+    background-color: var(--slate-300);
+}
+
+.search-bar > form > input[type="text"]:hover {
+    background-color: var(--slate-300);
 }
 
 .user-info {
@@ -120,12 +130,13 @@ img.profile-picture.medium {
 
 .user-info .notifications svg {
     width: 40px;
+    fill: var(--slate-600);
 }
 
 .user-info .username {
     color: var(--slate-900);
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     justify-self: start;
 }
 
