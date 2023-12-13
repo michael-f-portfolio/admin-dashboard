@@ -353,12 +353,13 @@ div.actions > button:hover {
     display: grid;
     margin-right: 16px;
     margin-top: 14px;
+    grid-template-rows: 50px 1fr;
 }
 
 .announcements-container h2 {
-    margin-top: 16px;
     padding-bottom: 8px;
     align-self: flex-end;
+    color: var(--slate-900);
 }
 
 .announcements {
@@ -391,11 +392,13 @@ div.actions > button:hover {
     display: grid;
     margin-right: 24px;
     margin-top: 24px;
+    grid-template-rows: 50px 1fr;
 }
 
 .trending-container > h2 {
     align-self: center;
     padding-bottom: 8px;
+    color: var(--slate-900);
 }
 
 .trends {
