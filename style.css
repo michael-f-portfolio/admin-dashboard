@@ -300,6 +300,7 @@ div.actions > button:hover {
 .project {
     padding-left: 16px;
     padding-right: 32px;
+    padding-bottom: 32px;
     min-height: 150px;
     min-width: 300px;
     max-width: 450px;
