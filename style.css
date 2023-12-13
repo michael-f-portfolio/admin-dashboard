@@ -99,6 +99,7 @@ img.profile-picture.medium {
     background-color: var(--slate-300);
     text-indent: 2rem;
     align-self: center;
+    min-width: 410px;
 }
 
 .search-bar > form > input[type="text"]:focus {
