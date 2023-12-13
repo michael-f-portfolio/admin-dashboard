@@ -56,13 +56,14 @@ img.profile-picture.medium {
     display: grid;
     padding-top: 32px;
     padding-left: 32px;
-    padding-bottom: 32px;
     padding-right: 32px;
+    min-height: 220px;
+    min-width: 920px;
     align-items: center;
     gap: 16px;
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 5vh 10vh;
+    grid-template-rows: 1fr 2fr;
 }
 
 .search-bar {
@@ -87,7 +88,7 @@ img.profile-picture.medium {
 }
 
 .search-bar svg {
-    height: 30px;
+    height: 40px;
 }
 
 .search-bar > form > input[type="text"] {
@@ -97,6 +98,7 @@ img.profile-picture.medium {
     border-radius: 50px;
     background-color: var(--slate-300);
     text-indent: 2rem;
+    align-self: center;
 }
 
 .search-bar > form > input[type="text"]:focus {
@@ -115,16 +117,45 @@ img.profile-picture.medium {
     justify-content: center;
 }
 
+.user-info .notifications svg {
+    width: 40px;
+}
+
+.user-info .username {
+    color: var(--slate-900);
+    font-weight: 700;
+    font-size: 1.7rem;
+    justify-self: start;
+}
+
 .greeting {
     display: grid;
     grid-template-columns: 1fr 8fr;
+}
+
+.greeting img.profile-picture {
+    justify-self: center;
 }
 
 .greeting-text {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-left: 8px;
+    color: var(--slate-900);
+    font-weight: 700;
 }
+
+.greeting-text .username {
+    font-size: 2rem;
+}
+
+.greeting-title {
+    font-size: 1.2rem;
+    align-self: end;
+}
+
+
 
 .actions {
     display: grid;
