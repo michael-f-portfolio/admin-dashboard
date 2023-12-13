@@ -418,7 +418,6 @@ div.logo span {
     margin-right: 24px;
     margin-top: 24px;
     max-height: 550px;
-
     grid-template-rows: 50px 1fr;
 }
 
@@ -447,6 +446,10 @@ div.logo span {
 .trend:hover {
     cursor: pointer;
     background-color: var(--slate-200);
+}
+
+.trend img {
+    justify-self: center;
 }
 
 .trend-description {
